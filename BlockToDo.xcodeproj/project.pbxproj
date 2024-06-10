@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3046A1BA2C0469DE005340D7 /* BlockToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A1B92C0469DE005340D7 /* BlockToDoApp.swift */; };
+		3046A1BC2C0469DE005340D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A1BB2C0469DE005340D7 /* ContentView.swift */; };
+		3046A1BE2C0469E2005340D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3046A1BD2C0469E2005340D7 /* Assets.xcassets */; };
+		3046A1C12C0469E2005340D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3046A1C02C0469E2005340D7 /* Preview Assets.xcassets */; };
+		3046A1D12C0D9D63005340D7 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3046A1D02C0D9D63005340D7 /* ManagedSettings.framework */; };
+		3046A1D32C0D9D63005340D7 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3046A1D22C0D9D63005340D7 /* ManagedSettingsUI.framework */; };
+		3046A1D62C0D9D64005340D7 /* ShieldConfigurationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A1D52C0D9D64005340D7 /* ShieldConfigurationExtension.swift */; };
+		3046A1DB2C0D9D64005340D7 /* BlockShield.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3046A1CE2C0D9D63005340D7 /* BlockShield.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3046A1F72C11764F005340D7 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A1F62C11764E005340D7 /* CustomTabView.swift */; };
+		3046A1F92C117667005340D7 /* TimeLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A1F82C117667005340D7 /* TimeLockView.swift */; };
+		3046A1FB2C1177D6005340D7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A1FA2C1177D6005340D7 /* MenuView.swift */; };
+		3046A1FD2C1177FF005340D7 /* QuickLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A1FC2C1177FF005340D7 /* QuickLockView.swift */; };
+		3046A1FF2C11F9EA005340D7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A1FE2C11F9E9005340D7 /* WebView.swift */; };
+		3046A2022C132F3C005340D7 /* GlowEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A2012C132F3C005340D7 /* GlowEffect.swift */; };
+		3046A2062C13F250005340D7 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046A2052C13F250005340D7 /* BlobView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3046A1D92C0D9D64005340D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3046A1AE2C0469DE005340D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3046A1CD2C0D9D63005340D7;
+			remoteInfo = BlockShield;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3046A1DF2C0D9D64005340D7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3046A1DB2C0D9D64005340D7 /* BlockShield.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3046A1B62C0469DE005340D7 /* BlockToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3046A1B92C0469DE005340D7 /* BlockToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockToDoApp.swift; sourceTree = "<group>"; };
+		3046A1BB2C0469DE005340D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3046A1BD2C0469E2005340D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3046A1C02C0469E2005340D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3046A1C72C0D9019005340D7 /* BlockToDo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockToDo.entitlements; sourceTree = "<group>"; };
+		3046A1CE2C0D9D63005340D7 /* BlockShield.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlockShield.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3046A1D02C0D9D63005340D7 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		3046A1D22C0D9D63005340D7 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		3046A1D52C0D9D64005340D7 /* ShieldConfigurationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldConfigurationExtension.swift; sourceTree = "<group>"; };
+		3046A1D72C0D9D64005340D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3046A1D82C0D9D64005340D7 /* BlockShield.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockShield.entitlements; sourceTree = "<group>"; };
+		3046A1F62C11764E005340D7 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		3046A1F82C117667005340D7 /* TimeLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLockView.swift; sourceTree = "<group>"; };
+		3046A1FA2C1177D6005340D7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		3046A1FC2C1177FF005340D7 /* QuickLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLockView.swift; sourceTree = "<group>"; };
+		3046A1FE2C11F9E9005340D7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		3046A2012C132F3C005340D7 /* GlowEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowEffect.swift; sourceTree = "<group>"; };
+		3046A2052C13F250005340D7 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3046A1B32C0469DE005340D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3046A1CB2C0D9D63005340D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3046A1D12C0D9D63005340D7 /* ManagedSettings.framework in Frameworks */,
+				3046A1D32C0D9D63005340D7 /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3046A1AD2C0469DE005340D7 = {
+			isa = PBXGroup;
+			children = (
+				3046A1B82C0469DE005340D7 /* BlockToDo */,
+				3046A1D42C0D9D64005340D7 /* BlockShield */,
+				3046A1CF2C0D9D63005340D7 /* Frameworks */,
+				3046A1B72C0469DE005340D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3046A1B72C0469DE005340D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3046A1B62C0469DE005340D7 /* BlockToDo.app */,
+				3046A1CE2C0D9D63005340D7 /* BlockShield.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3046A1B82C0469DE005340D7 /* BlockToDo */ = {
+			isa = PBXGroup;
+			children = (
+				3046A1C72C0D9019005340D7 /* BlockToDo.entitlements */,
+				3046A1B92C0469DE005340D7 /* BlockToDoApp.swift */,
+				3046A1F62C11764E005340D7 /* CustomTabView.swift */,
+				3046A1BB2C0469DE005340D7 /* ContentView.swift */,
+				3046A1F82C117667005340D7 /* TimeLockView.swift */,
+				3046A1FC2C1177FF005340D7 /* QuickLockView.swift */,
+				3046A1FA2C1177D6005340D7 /* MenuView.swift */,
+				3046A1FE2C11F9E9005340D7 /* WebView.swift */,
+				3046A2002C132EF3005340D7 /* Style */,
+				3046A1BD2C0469E2005340D7 /* Assets.xcassets */,
+				3046A1BF2C0469E2005340D7 /* Preview Content */,
+			);
+			path = BlockToDo;
+			sourceTree = "<group>";
+		};
+		3046A1BF2C0469E2005340D7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3046A1C02C0469E2005340D7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3046A1CF2C0D9D63005340D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3046A1D02C0D9D63005340D7 /* ManagedSettings.framework */,
+				3046A1D22C0D9D63005340D7 /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3046A1D42C0D9D64005340D7 /* BlockShield */ = {
+			isa = PBXGroup;
+			children = (
+				3046A1D52C0D9D64005340D7 /* ShieldConfigurationExtension.swift */,
+				3046A1D72C0D9D64005340D7 /* Info.plist */,
+				3046A1D82C0D9D64005340D7 /* BlockShield.entitlements */,
+			);
+			path = BlockShield;
+			sourceTree = "<group>";
+		};
+		3046A2002C132EF3005340D7 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				3046A2012C132F3C005340D7 /* GlowEffect.swift */,
+				3046A2052C13F250005340D7 /* BlobView.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3046A1B52C0469DE005340D7 /* BlockToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3046A1C42C0469E2005340D7 /* Build configuration list for PBXNativeTarget "BlockToDo" */;
+			buildPhases = (
+				3046A1B22C0469DE005340D7 /* Sources */,
+				3046A1B32C0469DE005340D7 /* Frameworks */,
+				3046A1B42C0469DE005340D7 /* Resources */,
+				3046A1DF2C0D9D64005340D7 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3046A1DA2C0D9D64005340D7 /* PBXTargetDependency */,
+			);
+			name = BlockToDo;
+			productName = BlockToDo;
+			productReference = 3046A1B62C0469DE005340D7 /* BlockToDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3046A1CD2C0D9D63005340D7 /* BlockShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3046A1DC2C0D9D64005340D7 /* Build configuration list for PBXNativeTarget "BlockShield" */;
+			buildPhases = (
+				3046A1CA2C0D9D63005340D7 /* Sources */,
+				3046A1CB2C0D9D63005340D7 /* Frameworks */,
+				3046A1CC2C0D9D63005340D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockShield;
+			productName = BlockShield;
+			productReference = 3046A1CE2C0D9D63005340D7 /* BlockShield.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3046A1AE2C0469DE005340D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3046A1B52C0469DE005340D7 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					3046A1CD2C0D9D63005340D7 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3046A1B12C0469DE005340D7 /* Build configuration list for PBXProject "BlockToDo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3046A1AD2C0469DE005340D7;
+			productRefGroup = 3046A1B72C0469DE005340D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3046A1B52C0469DE005340D7 /* BlockToDo */,
+				3046A1CD2C0D9D63005340D7 /* BlockShield */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3046A1B42C0469DE005340D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3046A1C12C0469E2005340D7 /* Preview Assets.xcassets in Resources */,
+				3046A1BE2C0469E2005340D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3046A1CC2C0D9D63005340D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3046A1B22C0469DE005340D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3046A1FB2C1177D6005340D7 /* MenuView.swift in Sources */,
+				3046A2022C132F3C005340D7 /* GlowEffect.swift in Sources */,
+				3046A1F72C11764F005340D7 /* CustomTabView.swift in Sources */,
+				3046A2062C13F250005340D7 /* BlobView.swift in Sources */,
+				3046A1F92C117667005340D7 /* TimeLockView.swift in Sources */,
+				3046A1BC2C0469DE005340D7 /* ContentView.swift in Sources */,
+				3046A1BA2C0469DE005340D7 /* BlockToDoApp.swift in Sources */,
+				3046A1FD2C1177FF005340D7 /* QuickLockView.swift in Sources */,
+				3046A1FF2C11F9EA005340D7 /* WebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3046A1CA2C0D9D63005340D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3046A1D62C0D9D64005340D7 /* ShieldConfigurationExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3046A1DA2C0D9D64005340D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3046A1CD2C0D9D63005340D7 /* BlockShield */;
+			targetProxy = 3046A1D92C0D9D64005340D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3046A1C22C0469E2005340D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3046A1C32C0469E2005340D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3046A1C52C0469E2005340D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = BlockToDo/BlockToDo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlockToDo/Preview Content\"";
+				DEVELOPMENT_TEAM = WMH547K26V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Block To Do";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kei.BlockToDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3046A1C62C0469E2005340D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = BlockToDo/BlockToDo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlockToDo/Preview Content\"";
+				DEVELOPMENT_TEAM = WMH547K26V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Block To Do";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kei.BlockToDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3046A1DD2C0D9D64005340D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockShield/BlockShield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WMH547K26V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockShield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kei.BlockToDo.BlockShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3046A1DE2C0D9D64005340D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockShield/BlockShield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WMH547K26V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockShield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kei.BlockToDo.BlockShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3046A1B12C0469DE005340D7 /* Build configuration list for PBXProject "BlockToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3046A1C22C0469E2005340D7 /* Debug */,
+				3046A1C32C0469E2005340D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3046A1C42C0469E2005340D7 /* Build configuration list for PBXNativeTarget "BlockToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3046A1C52C0469E2005340D7 /* Debug */,
+				3046A1C62C0469E2005340D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3046A1DC2C0D9D64005340D7 /* Build configuration list for PBXNativeTarget "BlockShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3046A1DD2C0D9D64005340D7 /* Debug */,
+				3046A1DE2C0D9D64005340D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3046A1AE2C0469DE005340D7 /* Project object */;
+}
